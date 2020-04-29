@@ -137,15 +137,18 @@ function fifthTask() {
     if (isNaN(c_z)) {alert('не заполнена координата z вершины C'); return;};
     let Result_str = '';
     //Считаем длину отрезка AB
-    let AB = ((b_x-a_x)**2+(b_y-a_y)**2+(b_z-a_z)**2)**1/2;
+    //let AB = ((b_x-a_x)**2+(b_y-a_y)**2+(b_z-a_z)**2)**1/2;
+    let AB = Math.sqrt((b_x-a_x)**2+(b_y-a_y)**2+(b_z-a_z)**2);
     AB = (AB<0) ? -AB : AB;
     Result_str = `Длина отрезка AB: ${AB}\n`;
     //Считаем длину отрезка ВС
-    let ВС = ((c_x-b_x)**2+(c_y-b_y)**2+(c_z-b_z)**2)**1/2;
+    //let ВС = ((c_x-b_x)**2+(c_y-b_y)**2+(c_z-b_z)**2)**1/2;
+    let ВС = Math.sqrt((c_x-b_x)**2+(c_y-b_y)**2+(c_z-b_z)**2);
     ВС = (ВС<0) ? -ВС : ВС;
     Result_str = Result_str+`Длина отрезка ВС: ${ВС}\n`;
     //Считаем длину отрезка ВС
-    let CA = ((a_x-c_x)**2+(a_y-c_y)**2+(a_z-c_z)**2)**1/2;
+    //let CA = ((a_x-c_x)**2+(a_y-c_y)**2+(a_z-c_z)**2)**1/2;
+    let CA = Math.sqrt((a_x-c_x)**2+(a_y-c_y)**2+(a_z-c_z)**2);
     CA = (CA<0) ? -CA : CA;
     Result_str = Result_str+`Длина отрезка CA: ${CA}\n`;
 
