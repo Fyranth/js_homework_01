@@ -1,0 +1,113 @@
+input {
+    margin: 5px;
+}
+
+/* стили для первого задания */ 
+.ft-form {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ft-values {
+    width: 50%;
+}
+.ft-result {
+    width: 50%;
+}
+
+/* стили для второго задания */
+.st-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.st-values {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.st-result {
+    width: 50%;
+}
+
+
+/* стили для третьего задания */
+.tt-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.tt-values {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.tt-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.tt-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.tt-result {
+    width: 50%;
+}
+
+/* стили для четвертого задания */
+.fourth-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.fourth-values {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.fourth-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fourth-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.fourth-result {
+    width: 50%;
+}
+
+/* стили для пятого задания */
+.fifth-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.fifth-values {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.fifth-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fifth-input {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+.fifth-result {
+    width: 50%;
+}
+
+h5 {
+    margin: 5px;
+}

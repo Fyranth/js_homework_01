@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS. homework 01</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <h3>Задание 1</h3>
+        <div class="ft-cotainer">
+            <div class="ft-form" id="fisrt-task">
+                <fieldset class="ft-values">
+                    <legend>Рассчитаем количество грядок и свободное место</legend>
+                    <label for="square-size">Размер участка (в сотках)</label><input id="square-size" type="number" value="10" required>
+                    <fieldset><legend>Размеры грядок</legend>
+                        <div class="ft-input"><label for="bed-width">Ширина (м)</label><input id="bed-width" type="number" value="15" required></div>
+                        <div class="ft-input"><label for="bed-height">Высота (м)</label><input id="bed-height" type="number" value="25" required></div>
+                    </fieldset>
+                    <button id="ft-submit" type="button" onclick="firstTask();">Рассчитать</button>
+                </fieldset>
+                <fieldset class="ft-result">
+                    <legend>Результат</legend>
+                    <p id="ft-result"></p>
+                </fieldset>
+            </div>
+        </div>
+        <h3>Задание 2</h3>
+        <div class="st-cotainer">
+            <div class="st-form" id="second-task">
+                <fieldset class="st-values">
+                    <legend>Рассчитаем площадь кольца</legend>
+                    <label for="big-elipse-size">Площадь большего овала (дм2)</label><input id="big-elipse-size" type="number" value="15" required>
+                    <label for="small-elipse-size">Площадь меньшего овала (см2)</label><input id="small-elipse-size" type="number" value="600" required>
+                    <button id="st-submit" type="button" onclick="secondTask();">Рассчитать</button>
+                </fieldset>
+                <fieldset class="st-result">
+                    <legend>Результат</legend>
+                    <p id="st-result"></p>
+                </fieldset>
+            </div>
+        </div>
+        <h3>Задание 3</h3>
+        <div class="tt-cotainer">
+            <div class="tt-form" id="third-task">
+                <fieldset class="tt-values">
+                    <legend>Выбрать наименьшее число</legend>
+                    <div class="tt-inputs">
+                        <div class="tt-input"><label for="tt-number1">Число 1</label><input id="tt-number1" type="number" required></div>
+                        <div class="tt-input"><label for="tt-number2">Число 2</label><input id="tt-number2" type="number" required></div>
+                        <div class="tt-input"><label for="tt-number3">Число 3</label><input id="tt-number3" type="number" required></div>
+                    </div>
+                    <button id="st-submit" type="button" onclick="thirdTask();">Выбрать</button>
+                </fieldset>
+                <fieldset class="tt-result">
+                    <legend>Результат</legend>
+                    <p id="tt-result"></p>
+                </fieldset>
+                <script>thirdTaskOnload()</script>
+            </div>
+        </div>
+        <h3>Задание 4</h3>
+        <div class="fourth-cotainer">
+            <div class="fourth-form" id="fourth-task">
+                <fieldset class="fourth-values">
+                    <legend>Выбрать наименьшее число</legend>
+                    <div class="fourth-inputs">
+                        <div class="fourth-input"><label for="fourth-control">Контроль</label><input id="fourth-control" type="number" required></div>
+                        <div class="fourth-input"><label for="fourth-number1">Число 1</label><input id="fourth-number1" type="number" required></div>
+                        <div class="fourth-input"><label for="fourth-number2">Число 2</label><input id="fourth-number2" type="number" required></div>
+                    </div>
+                    <button id="fourth-submit" type="button" onclick="fourthTask();">Выбрать</button>
+                </fieldset>
+                <fieldset class="fourth-result">
+                    <legend>Результат</legend>
+                    <p id="fourth-result"></p>
+                </fieldset>
+                <script>fourthTaskOnload()</script>
+            </div>
+        </div>
+        <h3>Задание 4</h3>
+        <div class="fifth-cotainer">
+            <div class="fifth-form" id="fifth-task">
+                <fieldset class="fifth-values">
+                    <legend>Выбрать наименьшее число</legend>
+                    <h5>Координаты вершины А</h5>
+                    <div class="fifth-inputs">
+                        <div class="fifth-input"><label for="fifth-a-x">x</label><input id="fifth-a-x" type="number" required></div>
+                        <div class="fifth-input"><label for="fifth-a-y">y</label><input id="fifth-a-y" type="number" required></div>
+                        <div class="fifth-input"><label for="fifth-a-z">z</label><input id="fifth-a-z" type="number" required></div>
+                    </div>
+                    <h5>Координаты вершины B</h5>
+                    <div class="fifth-inputs">
+                        <div class="fifth-input"><label for="fifth-b-x">x</label><input id="fifth-b-x" type="number" required></div>
+                        <div class="fifth-input"><label for="fifth-b-y">y</label><input id="fifth-b-y" type="number" required></div>
+                        <div class="fifth-input"><label for="fifth-b-z">z</label><input id="fifth-b-z" type="number" required></div>
+                    </div>
+                    <h5>Координаты вершины C</h5>
+                    <div class="fifth-inputs">
+                        <div class="fifth-input"><label for="fifth-c-x">x</label><input id="fifth-c-x" type="number" required></div>
+                        <div class="fifth-input"><label for="fifth-c-y">y</label><input id="fifth-c-y" type="number" required></div>
+                        <div class="fifth-input"><label for="fifth-c-z">z</label><input id="fifth-c-z" type="number" required></div>
+                    </div>
+                    <div class="fifth-buttons">
+                        <button id="fifth-submit" type="button" onclick="fifthTask();">Выбрать</button>
+                        <button id="fifth-submit" type="button" onclick="fifthTaskOnload();">Обновить</button>
+                    </div>
+                </fieldset>
+                <fieldset class="fifth-result">
+                    <legend>Результат</legend>
+                    <p id="fifth-result"></p>
+                </fieldset>
+                <script>fifthTaskOnload()</script>
+            </div>
+        </div>
+    </body>
+</html>
