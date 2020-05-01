@@ -177,7 +177,7 @@ function fifthTaskOnload() {
         let el_div = div_collection[i];
         let in_col = el_div.getElementsByTagName("input");
         let inp = in_col[0];
-        inp.value = getRandomInt(0, 50);
+        inp.value = getRandomInt(0, 10);
     }; 
 }
 

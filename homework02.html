@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/hw02.css">
+        <script src="./js/homework02.js"></script>
+    </head>
+    <body>
+        <!--блок первого задания-->
+        <div class="task-container">
+            <form class="task-form">
+                <Fieldset>
+                    <legend>Задача №1</legend>
+                    <label for="month">Введите номер месяца</label><input id="month" type="number" min="1" max="12" value="1" required>
+                    <button type="button" onclick="task01();">Ок</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-01"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--Блок второго задания-->
+        <div class="task-container">
+            <form class="task-form">
+                <Fieldset>
+                    <legend>Задача №2</legend>
+                    <label for="unit">Выбрерите ед.изм.</label>
+                    <div class="radio-row">
+                        <label>Дм <input name="unit" type="radio" value="1" checked></label>
+                        <label>Км <input name="unit" type="radio" value="2"></label>
+                        <label>М <input name="unit" type="radio" value="3"></label>
+                        <label>См <input name="unit" type="radio" value="4"></label>
+                        <label>Мм <input name="unit" type="radio" value="5"></label>
+                    </div>
+                    <label for="length">Введите длину</label><input id="length" type="number" value="1" required>
+                    <button type="button" onclick="task02();">Ок</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-02"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--блок третьего задания-->
+        <div class="task-container">
+            <form class="task-form">
+                <Fieldset>
+                    <legend>Задача №3</legend>
+                    <label for="number">Введите число</label><input id="number" type="number" min="-999" max="999" value="1" step="1" required>
+                    <button type="button" onclick="task03();">Сообщить</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-03"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--блок Четвертого задания-->
+        <div class="task-container">
+            <form class="task-form">
+                <Fieldset>
+                    <legend>Задача №4</legend>
+                    <div class="column">
+                        <label for="numberMin">Число старт</label><input id="numberMin" type="number" min="1" value="1" step="1" required>
+                        <label for="numberMax">Число финиш</label><input id="numberMax" type="number" min="1" value="100" step="1" required>
+                    </div>
+                    <button type="button" onclick="task04();">Сообщить</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-04"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--блок пятого задания-->
+        <div class="task-container">
+            <form class="task-form">
+                <Fieldset>
+                    <legend>Задача №5</legend>
+                    <label for="year">Введите год</label><input id="year" type="number" min="0" value="2020" step="1" required>
+                    <button type="button" onclick="task05();">Сообщить</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-05"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--блок шестого задания-->
+        <div class="task-container">
+            <form class="task-form">
+                <Fieldset>
+                    <legend>Задача №5</legend>
+                    <div class="column">
+                        <label for="plate">Тарелки</label><input id="plate" type="number" min=1" value="20" step="1" required>
+                        <label for="wash">Моющ.средство</label><input id="wash" type="number" min="1" value="12" step="1" required>
+                        <button type="button" onclick="task06();">Сообщить</button>   
+                    </div>
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-06"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
