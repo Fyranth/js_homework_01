@@ -1,0 +1,14 @@
+#deck {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.deck-cell {
+    border: 1px solid black;
+}
