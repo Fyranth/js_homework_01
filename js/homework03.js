@@ -1,5 +1,5 @@
 //Задание №1
-console.log('Задание №1');
+/*console.log('Задание №1');
 let A = [12, 4, 3, 10, 1, 20];
 let B = [-3, -7, -100, -33];
 let CBegin = A.slice(), CEnd = A.slice();
@@ -93,4 +93,34 @@ for(let i=1; i<=999999; i++) {
 }
 
 console.log("Всего счастливых билетов: "+result.length);
-console.log(result);
+console.log(result);*/
+
+//Задание №5
+console.log("Задание №5");
+let mol = "2,7,4,1,8,1";
+
+mol = prompt("Введите список массы молекул, через запятую", mol);
+let weights = mol.split(",");
+console.log("Вы ввели следующие данные", mol);
+
+if(weights.length>0){
+    //Преобразуем значения массива в числа
+    weights.map(Number);
+    
+    while(weights.length>=2){
+        //Отсортируем в порядке возврастания
+        weights.sort(function(a,b){return b-a});
+        //Берем 2 максимальныз веса
+        let max1 = weights[0];
+        let max2 = weights[1];
+        let delta = max1-max2;
+        if(delta !== 0) {weights.push(delta)}
+
+        weights.splice(0,2);
+    }
+    
+    
+    (weights.length==1) ? console.log("Осталась молекула весом: ", weights[0]) :  console.log("Молекул не осталось");
+
+} else { console.log("Вы ввели пустой список")}
+
